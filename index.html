@@ -20,9 +20,15 @@
     <div id="root">
       <h1>{{ saluto }}</h1>
 
+      <!-- campo input e stampa valore in un tag p -->
+      <input type="text" v-model="message" placeholder="inserisci qualcosa">
+      <p>{{message}}</p>
 
       <!-- immagine -->
       <img v-bind:src="srcImg" alt="">
+
+      <!-- evento al click del bottone che cambia immagine -->
+      <button @click="cambiaImmagine" type="button" name="button">click me to change the img</button>
     </div>
 
   <!-- fogli javascript -->
